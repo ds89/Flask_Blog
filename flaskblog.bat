@@ -1,7 +1,12 @@
 @echo off
 
+:: Name of virtual environment
+set VENV_NAME="project1_env"
+
 :: Setup virtual environment with flask module
-call "D:\Projects\Python\envs\project1_env\Scripts\activate.bat"
+call "D:\Projects\Python\envs\%venv_name%\Scripts\activate.bat"
+
+set VENV_NAME=
 
 :: Set env variables for flask web server
 set FLASK_APP=flaskblog.py
